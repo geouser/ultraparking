@@ -1,5 +1,5 @@
 .offer {
-    height: 800px;
+    height: 540px;
     max-height: 100%;
     @include flex($direction: column, $alignI: center, $justify: center);
     
@@ -8,10 +8,12 @@
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-    
-    h1 {
-        margin-bottom: 40px;
-        text-transform: uppercase;
+    color: #FFF;
+    .logo {
+        position: absolute;
+    }
+    .wrapper {
+        padding-top: 60px;
     }
 }
 
