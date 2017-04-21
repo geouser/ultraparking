@@ -18,6 +18,13 @@
     padding-left: 14px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
+    &--black {
+        background-color: #000;
+        color: #FFF;
+    }
+    &--long {
+        width: 575px;
+    }
 }
 
 /* ------------------------------------ */
