@@ -29,6 +29,12 @@
         max-width: 76%;
         text-align: center;
         margin: 0 auto;
+        @media (max-width: 1700px) {
+            font-size: 20px;
+        }
+        @media (max-width: 1500px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -73,10 +79,21 @@
     margin: 0 auto 35px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
+    @media (max-width: 1700px) {
+        margin-bottom: 25px;
+    }
+    @media (max-width: 1500px) {
+        margin-bottom: 15px;
+    }
     &--big {
         width: 140px;
         height: 140px;
         line-height: 140px;
+        @media (max-width: 1500px) {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
     }
     &:after {
         display: inline-block;
@@ -87,8 +104,13 @@
     img {
         display: inline-block;
         vertical-align: middle;
-        max-width: 98%;
+        max-width: 70%;
+        max-height: 70%;
         margin-top: -6px;
+        @media (max-width: 1500px) {
+            max-width: 55%;
+            max-height: 55%;
+        }
     }
 }
 
@@ -107,6 +129,12 @@
        -moz-animation: bounce 4s infinite;
          -o-animation: bounce 4s infinite;
             animation: bounce 4s infinite;
+    @media (max-width: 1700px) {
+        bottom: 30px;
+    }
+    @media (max-width: 1500px) {
+        bottom: 20px;
+    }
     &:hover {
         opacity: .5;
     }
@@ -146,6 +174,14 @@
     -webkit-border-radius: 5px;
             border-radius: 5px;
     @include transition(all, .2s);
+    @media (max-width: 1700px) {
+        width: 450px;
+        height: 360px;
+    }
+    @media (max-width: 1500px) {
+        width: 400px;
+        height: 320px;
+    }
     &:hover {
         border-color: $red;
     }

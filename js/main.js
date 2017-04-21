@@ -41,6 +41,30 @@ jQuery(document).ready(function($) {
         });    
     }
 
+
+    if (window.params.isMobile) {
+        $(document).click(function(event){
+            if ($(event.target).closest('header').is(".mainHeader")) {console.log('mainHeader')
+                $(".mainHeader").addClass('opened');
+            } else {
+                $(".mainHeader").removeClass('opened');
+            }
+        });
+    } else {
+        $(".mainHeader").hover(function(){
+            $(this).addClass('opened');
+            }, function(){
+            $(this).removeClass('opened');
+        });
+    }
+
+    $('.scroll-down').click(function(){
+        $.fn.fullpage.moveSectionDown();
+    });
+    $('.scroll-up').click(function(){
+        $.fn.fullpage.moveSectionUp();
+    });
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
@@ -67,28 +91,12 @@ jQuery(document).ready(function($) {
     });
 
 
-    /*---------------------------
-                                  MENU TOGGLE
-    ---------------------------*/
-    $('.menu-button').on('click', function(event) {
-        event.preventDefault();
-        $(this).toggleClass('active');
-        $(this).siblings('header').toggleClass('active');
-        if ($('header').hasClass('active')) {
-                $('body').css('overflow', 'hidden');
-            } else {
-                $('body').css('overflow', 'visible');
-            }
-    });
-
 
 
     /*---------------------------
                                   Fancybox
     ---------------------------*/
-    $('.fancybox').fancybox({
-        
-    });
+    $('.fancybox').fancybox({});
 
 
     $('.input-group--select').click(function(){
