@@ -8,7 +8,6 @@ html,
 body {
 	height: 100%;
   color: $text;
-  background-color: #eee;
   font-family: $s;
   font-size: 18px;
 }
@@ -27,6 +26,11 @@ h1,
 h2,
 h3 {
   font-family: $l;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -48,6 +52,32 @@ h3 {
 	text-align: center;
 }
 
+.section {
+  padding: 60px 0;
+}
+
+.article {
+  & > p {
+    line-height: 30px;
+    padding: 0 20%;
+    letter-spacing: .025rem;
+    margin-bottom: 40px;
+  }
+  & + .locations {
+    margin-top: 65px;
+  }
+}
+
+.framed {
+  border: 3px solid #000;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.bg {
+  background-color: #f6f6f6;
+}
 
 .flex-row {
     @include flex($alignI: flex-start, $justify: flex-start);

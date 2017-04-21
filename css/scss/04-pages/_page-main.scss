@@ -106,8 +106,8 @@
 }
 
 .locations {
-    -webkit-justify-content: space-between;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
 }
 .location {
     width: 500px;
@@ -189,5 +189,25 @@
         width: 20px;
         display: block;
         margin: 6px auto 0;
+    }
+}
+
+.info-numbers {
+    margin: 60px 0;
+    &__item {
+        i {
+            display: block;
+            text-align: center;
+            color: $red;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 72px;
+            font-style: normal;
+            line-height: 1;
+        }
+        span {
+            font-size: 21px;
+            font-weight: 600;
+        }
     }
 }
