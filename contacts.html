@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ultraparking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
+        <meta http-equiv="ImageResize" content="no">
+        <meta http-equiv="ImageToolbar" content="no">
+        <meta name="MSSmartTagsPreventParsing" content="true">
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><![endif]-->
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta name="google-site-verification" content="">
+        <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+        
+        <link rel="stylesheet" href="css/general.css">
+    </head>
+    <body style="background-image:url('images/offer-main.jpg')">
+
+
+       
+                <!--=================================================================================================-->
+                                                    <!-- HEADER -->
+        <header class="mainHeader compensate-for-scrollbar">
+            <div class="wrapper">
+                        
+                <button class="menu-button"> 
+                    <span class="menu-line top_line"></span>
+                    <span class="menu-line middle_line"></span>
+                    <span class="menu-line bottom_line"></span>
+                </button><!-- end toggle mobile menu -->
+
+                <nav class="page-navigation">
+                    <ul>
+                        <li><a href="">Ultra Parking</a></li>
+                        <li><a href="">Book a Spot</a></li>
+                        <li><a href="">Silver Tower</a></li>
+                        <li><a href="">Regal Tower</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <ul id="myMenu" class="sections-menu">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><img src="images/house-icon-r.png" alt=""><img src="images/house-icon.png" alt=""> <span>Home page</span></a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage"><img src="images/settings-icon-r.png" alt=""><img src="images/settings-icon.png" alt=""> <span>how it works</span></a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage"><img src="images/prize-icon-r.png" alt=""><img src="images/prize-icon.png" alt=""> <span>Our Benefits</span></a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage"><img src="images/location-icon-r.png" alt=""><img src="images/location-icon.png" alt=""> <span>Locations</span></a></li>
+                </ul>
+
+   
+                <div class="social">
+                    <p><i><img src="images/phone.png" alt=""></i><a href="tel:+971 4 451 88 05 ">+971 4 451 88 05 </a></p>
+                    <p><i><img src="images/person.png" alt=""></i><a href="">Register/login </a></p>
+                    <p><i><img src="images/social.png" alt=""></i>
+                        <a href=""><img src="images/fb.svg" alt=""></a>
+                        <a href=""><img src="images/tw.svg" alt=""></a>
+                        <a href=""><img src="images/in.svg" alt=""></a>
+                    </p>
+                </div>
+
+            </div><!-- end wrapper -->
+        </header><!-- end header -->
+
+        <div class="overlay"></div>
+
+        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        
+
+        <div class="fullpage" id="fullpage">
+
+            <section class="fp-section">
+                <div class="wrapper">
+                    <h1 class="section-title">Contact Us</h1>
+
+                   <form action="" class="form">
+
+                        <div class="flex-row">
+                            <div class="col-3">
+                                <label for="">Name</label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter your name..">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label for="">Email</label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter your email..">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label for="">Phone</label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter your phone..">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label for="">Message</label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Enter your message..">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <small>You can apply for any question, the form works as a support</small>
+                        <button class="button">Send</button>
+                   </form>
+
+                   <address>
+                       <h2>Our contacts</h2>
+                       <p>2010, Silver Tower, Business Bay, Dubai</p>
+                       <a href="tel:+971 4 451 88 05">+971 4 451 88 05</a>
+                       <a href="mailto: hello@ultraparking.ae">hello@ultraparking.ae</a>
+                   </address>
+                </div>
+                <a href="#anchor" class="scroll-down"><span>Scroll down</span><img src="images/mouse.svg" alt=""></a>
+            </section> <!-- end fp-section -->
+
+        </div> <!-- end fullpage -->
+
+        <!-- //////////////////////////////////////////////////////////////////////// -->
+
+        <div id="modal-popup" class="fncb-hide popup"></div>
+
+        <div id="modal-popup-ok" class="fncb-hide popup result">
+            <p class="heading">Спасибо!</p>
+            <p class="msg">Ваше сообщение было успешно отправлено. Мы свяжемся с Вами в ближайшее время!</p>
+        </div>
+
+        <div id="modal-popup-error" class="fncb-hide popup result">
+            <p class="heading">Возникла ошибка при отправке Вашего запроса.</p>
+            <p class="msg">Пожалуйста, проверьте правильность внесённых данных и попробуйте снова!</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB8OI63bD1KAI4MAo0yz7p0Fj-RiPEZYPk"></script>
+
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

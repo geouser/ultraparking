@@ -46,6 +46,12 @@ h2 {
   }
 }
 
+.bg {
+  .section-title {
+    color: #000;
+  }
+}
+
 
 // lAYOUT
 // ---------------------------
@@ -94,6 +100,10 @@ h2 {
     &.flex-row-center {
         -webkit-justify-content: center;
                 justify-content: center;
+    }
+    &.space-around {
+      -webkit-justify-content: space-around;
+              justify-content: space-around;
     }
 }
 [class*='col-'] {

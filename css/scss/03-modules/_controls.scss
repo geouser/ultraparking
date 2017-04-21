@@ -3,6 +3,7 @@
     width: 180px;
     height: 55px;
     line-height: 55px;
+    max-width: 100%;
     
     text-align: center;
     text-transform: uppercase;
@@ -14,7 +15,7 @@
     border: none;
     cursor: pointer;
     
-    letter-spacing: .5em;
+    letter-spacing: .25em;
     padding-left: 14px;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -24,6 +25,12 @@
     }
     &--long {
         width: 575px;
+    }
+    &--full {
+        width: 100%;
+    }
+    &--small {
+        font-size: 16px;
     }
 }
 
@@ -79,6 +86,23 @@
 
 
 .form {
+    h2 {
+        color: #000;
+        font-family: $s;
+        width: 120%;
+        margin-left: -10%;
+        margin-right: -10%;
+        margin-bottom: 0;
+    }
+    .form-controls {
+        width: 120%;
+        margin-left: -10%;
+        margin-right: -10%;
+        margin-top: 65px !important;
+        .button {
+            margin-top: 0;
+        }
+    }
     .form-title {
         text-transform: uppercase;
         letter-spacing: .5em;
@@ -89,6 +113,26 @@
     .col-4 {
         padding: 0 35px;
     }
+    .col-12 {
+        &:nth-child(n+1) {
+            margin-top: 35px;
+        }
+    }
+    .flex-row {
+        &:nth-child(n+1) {
+            margin-top: 35px;
+        }
+    }
+    label {
+        text-transform: uppercase;
+        color: #FFF;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        letter-spacing: .5em;
+        margin-bottom: 6px;
+    }
     .input-group {
         color: #000;
         text-align: left;
@@ -96,17 +140,36 @@
         background-color: #FFF;
         height: 55px;
         line-height: 55px;
-        padding-left: 60px;
+        padding-left: 20px;
         -webkit-border-radius: 5px;
                 border-radius: 5px;
+        input {
+            width: 100%;
+            border: none;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+            height: 100%;
+        }
         &--select {
+            padding-left: 60px;
             cursor: pointer;
             background-image: url("../images/arrow-down.svg");
             background-position: 95% 50%;
             background-repeat: no-repeat;
+            border: none !important;
             -webkit-background-size: 18px 12px;
                  -o-background-size: 18px 12px;
                     background-size: 18px 12px;
+            input {
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                font-size: 21px;
+                font-weight: 600;
+            }
         }
         span {
             font-size: 21px;
@@ -119,15 +182,6 @@
             top: 0;
             bottom: 0;
             margin: auto;
-        }
-        input {
-            width: 0;
-            height: 0;
-            position: absolute;
-            left: 0;
-            opacity: 0;
-            font-size: 21px;
-            font-weight: 600;
         }
         ul {
             visibility: hidden;
@@ -154,9 +208,23 @@
             }
         }
     }
+    small {
+        margin-top: 35px;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        & + button {
+            margin-top: 4px;
+        }
+    }
     button {
         width: 380px;
         margin-top: 35px;
+        &.button--full {
+            width: 750px;
+            max-width: 100%;
+        }
     }
     input.datepicker {
         width: 100%;
@@ -166,6 +234,14 @@
         visibility: visible;
         border: none;
         background: transparent;
+    }
+    &--dark {
+        .input-group {
+            border: 2px solid $text;
+        }
+        label {
+            color: $text;
+        }
     }
 }
 
@@ -202,5 +278,26 @@
     li {
         display: block;
         margin: 30px auto;
+    }
+}
+
+address {
+    margin-top: 60px;
+    font-style: normal;
+    color: #FFF;
+    h2 {
+        margin-bottom: 25px;
+    }
+    p {
+        letter-spacing: .025em;
+    }
+    a {
+        display: block;
+        color: #FFF;
+        text-align: center;
+        font-size: 21px;
+        font-weight: 700;
+        margin-top: 6px;
+        letter-spacing: .025em;
     }
 }
