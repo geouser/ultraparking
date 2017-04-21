@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     ---------------------------*/
     if ( exist('#fullpage') ) {
         $('#fullpage').fullpage({
-            lockAnchors: true,
+            lockAnchors: false,
             sectionSelector: '.fp-section',
             slideSelector: '.fp-slide',
             responsiveWidth: 1200,
