@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Ceylan</title>
+        <title>Ultraparking</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
         <meta http-equiv="ImageResize" content="no">
         <meta http-equiv="ImageToolbar" content="no">
@@ -18,7 +18,7 @@
         
         <link rel="stylesheet" href="css/general.css">
     </head>
-    <body>
+    <body style="background-image:url('images/offer-main.jpg')">
 
 
        
@@ -27,57 +27,159 @@
         <header class="mainHeader compensate-for-scrollbar">
             <div class="wrapper">
 
-                <nav class="mainNav"><!-- start navigation -->
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">News</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                    </ul>
-                </nav><!-- end nav -->
+                        
+                <button class="menu-button"> 
+                    <span class="menu-line top_line"></span>
+                    <span class="menu-line middle_line"></span>
+                    <span class="menu-line bottom_line"></span>
+                </button><!-- end toggle mobile menu -->
+
+                <ul id="myMenu" class="sections-menu">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><img src="images/house-icon.png" alt=""></a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage"><img src="images/settings-icon.png" alt=""></a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage"><img src="images/prize-icon.png" alt=""></a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage"><img src="images/location-icon.png" alt=""></a></li>
+                </ul>
 
                 <div class="mainHeader__info">
-                    <a href="tel:+971 55 915 94 49" class="tel">+971 55 915 94 49</a>
-                    <a href="mailto:hello@law.com" class="mail">hello@law.com</a>
-                    <div class="social">
+                    <a href="">cds</a>
+                    <!-- <div class="social">
                         <a href="" class="social__item"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="" class="social__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         <a href="" class="social__item"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    </div>
+                    </div>-->
                 </div><!-- end mainHeader__info -->
 
             </div><!-- end wrapper -->
         </header><!-- end header -->
+
+        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
         
-        <button class="menu-button"> 
-            <span class="menu-line top_line"></span>
-            <span class="menu-line middle_line"></span>
-            <span class="menu-line bottom_line"></span>
-        </button><!-- end toggle mobile menu -->
+
+        <div class="fullpage" id="fullpage">
+
+            <section class="fp-section">
+                <div class="wrapper">
+                   <h1 class="section-title">How It Works</h1>
+
+                   <div class="flex-row number-list">
+                        <div class="col-4 step number-increament">
+                            <i class="number-position icon"></i>
+                            <span>Find</span>
+                            <p>Choose a perfect spot using quick search online!</p>
+                        </div>
+                        <div class="col-4 step number-increament">
+                            <i class="number-position icon"></i>
+                            <span>Register</span>
+                            <p>Get an invoice via email, registered on our website!</p>
+                        </div>
+                        <div class="col-4 step number-increament">
+                            <i class="number-position icon"></i>
+                            <span>pay</span>
+                            <p>Pay for you parking lot with cash or a credit card!</p>
+                        </div>
+                   </div>
+
+                </div>
+                <a href="#anchor" class="scroll-down"><span>Scroll down</span><img src="images/mouse.svg" alt=""></a>
+            </section> <!-- end fp-section -->
+
+            <section class="fp-section">
+                <div class="wrapper">
+                    <h1 class="section-title">Our Benefits</h1>
+
+                   <div class="flex-row flex-row-center">
+                        <div class="col-4 step">
+                            <i class="icon icon--big"><img src="images/benefits-1.png" alt=""></i>
+                            <p>3 min walk the closest tower</p>
+                        </div>
+                        <div class="col-4 step">
+                            <i class="icon icon--big"><img src="images/benefits-2.png" alt=""></i>
+                            <p>Guaranteed parking spot 24/7 </p>
+                        </div>
+                        <div class="col-4 step">
+                            <i class="icon icon--big"><img src="images/benefits-3.png" alt=""></i>
+                            <p>Well-lit and marked spacing</p>
+                        </div>
+                        <div class="col-4 step">
+                            <i class="icon icon--big"><img src="images/benefits-4.png" alt=""></i>
+                            <p>Stress-free check in and out</p>
+                        </div>
+                        <div class="col-4 step">
+                            <i class="icon icon--big"><img src="images/benefits-5.png" alt=""></i>
+                            <p>Assistance and security</p>
+                        </div>
+                   </div>
+                </div>
+                <a href="#anchor" class="scroll-down"><span>Scroll down</span><img src="images/mouse.svg" alt=""></a>
+            </section> <!-- end fp-section -->
 
 
-        <!--=================================================================================================-->
-                                                    <!-- OFFER SECTION -->
-        <section class="offer">
-            <div class="wrapper"><!-- start offerInfo -->
-                <h1>Hello, I'm Dreamkiller. Let's get started!</h1>
-                <button class="button fancybox" data-src="#modal-popup" href="javascript:;">Request a call</button>
-            </div><!-- end wrapper -->
-        </section><!-- end offer section --> 
+            <section class="fp-section">
+                <div class="wrapper">
+                    <h1 class="section-title">Welcome phrase for <br>future customers</h1>
 
-        <!-- 
-        <section class="offer--slider">
-            <div class="slide" style="background-image: url(images/offer-slide-1.jpg);">
-                <h2>“Example Slider”</h2>
-                <button class="button">Read more</button>
-            </div>
-            <div class="slide" style="background-image: url(images/offer-slide-1.jpg);">
-                <h2>“Rays Group”</h2>
-                <button class="button">Read more</button>
-            </div>
-        </section>
-        -->
+                   <form action="" class="form">
+                        <p class="form-title">Quick search for available seats</p>
 
+                        <div class="flex-row">
+                            <div class="col-4">
+                                <div class="input-group input-group--select">
+                                    <img src="images/date.png" alt="">
+                                    <input type="text" placeholder="Period" class="datepicker">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group input-group--select">
+                                    <img src="images/tower.png" alt="">
+                                    <span>Tower</span>
+
+                                    <input type="text" placeholder="">
+                                    <ul class="select-list">
+                                       <li>Option 1</li>
+                                       <li>Option 2</li>
+                                       <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-group input-group--select">
+                                    <img src="images/quantity.png" alt="">
+                                    <span>Quantity</span>
+
+                                    <input type="text" placeholder="">
+                                    <ul class="select-list">
+                                       <li>Option 1</li>
+                                       <li>Option 2</li>
+                                       <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="button">Search</button>
+                   </form>
+                </div>
+                <a href="#anchor" class="scroll-down"><span>Scroll down</span><img src="images/mouse.svg" alt=""></a>
+            </section> <!-- end fp-section -->
+
+            <section class="fp-section">
+                <div class="wrapper">
+                    <h1 class="section-title">Locations</h1>
+
+                   <div class="flex-row locations">
+                        <a href="" class="location" style="background-image: url('images/location-1.jpg');">
+                            <span>regal Tower</span>
+                        </a>
+                        <a href="" class="location" style="background-image: url('images/location-1.jpg');">
+                            <span>regal Tower</span>
+                        </a>
+                   </div>
+                </div>
+                <a href="#anchor" class="scroll-up"><img src="images/up-arrow.svg" alt=""><span>Top</span></a>
+            </section> <!-- end fp-section -->
+            
+        </div> <!-- end fullpage -->
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->
 
@@ -94,9 +196,11 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB8OI63bD1KAI4MAo0yz7p0Fj-RiPEZYPk"></script>
 
         <script src="js/slick.min.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
 
         <script src="js/main.js"></script>

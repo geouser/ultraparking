@@ -25,6 +25,22 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+     /*---------------------------
+                                  Fullpage
+    ---------------------------*/
+    if ( exist('#fullpage') ) {
+        $('#fullpage').fullpage({
+            lockAnchors: true,
+            sectionSelector: '.fp-section',
+            slideSelector: '.fp-slide',
+            responsiveWidth: 1200,
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            menu: '#myMenu',
+            css3: true,
+            scrollingSpeed: 1000
+        });    
+    }
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
@@ -50,26 +66,6 @@ jQuery(document).ready(function($) {
         return false;
     });
 
-    /*---------------------------
-                                ACTIVATE MENU ITEM OVER CURRENT SECTION
-    ---------------------------*/
-    var $sections = $('section');
-    $(window).scroll(function(){
-        var currentScroll = $(this).scrollTop();
-        var $currentSection;
-        var windowHalf = $(window).height() / 2;
-        
-        $sections.each(function(){
-          var divPosition = $(this).offset().top - windowHalf;
-          
-          if( divPosition - 1 < currentScroll ){
-            $currentSection = $(this);
-          }
-        var id = $currentSection.attr('id');
-          $('a').removeClass('active');
-          $("[href=#"+id+"]").addClass('active');
-        })
-    });
 
     /*---------------------------
                                   MENU TOGGLE
@@ -95,6 +91,16 @@ jQuery(document).ready(function($) {
     });
 
 
+    $('.input-group--select').click(function(){
+        $(this).toggleClass('open');
+        $(this).find('ul').toggleClass('open');
+    });
+
+    $('.select-list li').click(function(){
+        var value = $(this).text();
+        $(this).parent().siblings('input').val(value);
+        $(this).parent().siblings('span').text(value);
+    });
 
     /*----------------------------
                               SEND FORM
@@ -148,6 +154,11 @@ jQuery(document).ready(function($) {
             });
         });
     });
+
+
+    if (exist('.datepicker')) {
+        $(".datepicker").datepicker();
+    }
 
 
 

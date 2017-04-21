@@ -1,0 +1,42 @@
+@font-face {
+        font-family: "Segoe";
+        src: url("../fonts/SegoeUIRegular.eot");
+        src: url("../fonts/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/SegoeUIRegular.woff") format("woff"),
+        url("../fonts/SegoeUIRegular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+}
+@font-face {
+        font-family: "Segoe";
+        src: url("../fonts/SegoeUIBold.eot");
+        src: url("../fonts/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/SegoeUIBold.woff") format("woff"),
+        url("../fonts/SegoeUIBold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 700;
+}
+@font-face {
+        font-family: "Segoe";
+        src: url("../fonts/SegoeUISemiBold.eot");
+        src: url("../fonts/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+        url("../fonts/SegoeUISemiBold.woff") format("woff"),
+        url("../fonts/SegoeUISemiBold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 600;
+}
+
+
+
+@font-face {
+    font-family:'Libre';
+    src: url('../fonts/LibreBaskerville-Bold.eot');
+    src: url('../fonts/LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LibreBaskerville-Bold.woff2') format('woff2'),
+        url('../fonts/LibreBaskerville-Bold.woff') format('woff'),
+        url('../fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}

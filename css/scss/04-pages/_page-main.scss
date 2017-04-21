@@ -1,0 +1,193 @@
+.step {
+    &:nth-child(n+4) {
+        margin-top: 40px;
+    }
+    span {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        padding-left: 14px;
+        &:after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 20px;
+            background-color: $red;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            left: -7px;
+        }
+    }
+    p {
+        font-size: 21px;
+        font-weight: 600;
+        max-width: 76%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.icon {
+    font-style: normal;
+    background: rgba(35,31,32, .5);
+    display: block;
+    border: 3px solid $red;
+    width: 60px;
+    height: 60px;
+    line-height: 56px;
+    font-weight: 700;
+    margin: 0 auto 35px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    &--big {
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+    }
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        content: "";
+    }
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 98%;
+        margin-top: -6px;
+    }
+}
+
+.scroll-down {
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    width: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    color: #FFF;
+    @include transition(all, .2s);
+    -webkit-animation: bounce 4s infinite;
+       -moz-animation: bounce 4s infinite;
+         -o-animation: bounce 4s infinite;
+            animation: bounce 4s infinite;
+    &:hover {
+        opacity: .5;
+    }
+    span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+    img {
+        width: 26px;
+        display: block;
+        margin: 6px auto 0;
+    }
+}
+
+@keyframes bounce  {
+    0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+    40% {
+    @include transform(translateY(-20px));
+  }
+    60% {
+    @include transform(translateY(-10px));
+  }
+}
+
+.locations {
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+.location {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    border: 3px solid #fff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    @include transition(all, .2s);
+    &:hover {
+        border-color: $red;
+    }
+    &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        display: block;
+        background: rgba(0,0,0,.25);
+        @include transition(all, .2s);
+    }
+    span {
+        display: block;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 350px;
+        height: 55px;
+        line-height: 55px;
+        color: #fff;
+        font-size: 18px;
+                letter-spacing: .5em;
+        padding-left: 14px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        font-weight: 700;
+        z-index: 2;
+        @include transition(all, .2s);
+    }
+    &:hover {
+        border-color: $red;
+        span {
+            background-color: #FFF;
+            color: $red;
+        }
+        &:after {
+            opacity: 0;
+        }
+    }
+}
+
+.scroll-up {
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    right: 80px;
+    z-index: 100;
+    color: #FFF;
+    @include transition(all, .2s);
+    -webkit-animation: bounce 4s infinite;
+       -moz-animation: bounce 4s infinite;
+         -o-animation: bounce 4s infinite;
+            animation: bounce 4s infinite;
+    &:hover {
+        opacity: .5;
+    }
+    span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+    img {
+        width: 20px;
+        display: block;
+        margin: 6px auto 0;
+    }
+}

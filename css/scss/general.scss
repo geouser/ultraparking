@@ -2,9 +2,10 @@
 @import '01-tools/normalize';
 /*@import '01-tools/flexboxgrid';*/
 @import '01-tools/fonts';
+@import '01-tools/fullpage';
 @import '01-tools/slick';
 @import '01-tools/slick-theme';
-@import '01-tools/font-awesome';
+/*@import '01-tools/font-awesome';*/
 @import '01-tools/fancybox';
 
 /*Base styles*/
@@ -16,10 +17,11 @@
 
 /*Modules styles*/
 @import '03-modules/controls';
-@import '03-modules/header';
+@import '03-modules/sidebar';
 @import '03-modules/offer';
 @import '03-modules/footer';
 @import '03-modules/popup';
 
 
 /*Pages styles*/
+@import '04-pages/page-main';

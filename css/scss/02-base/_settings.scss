@@ -1,9 +1,42 @@
 
 // TYPOGRAPHIC
 // ---------------------------
+html {
+      padding-left: 80px !important;
+}
 html,
 body {
 	height: 100%;
+  color: $text;
+  background-color: #eee;
+  font-family: $s;
+  font-size: 18px;
+}
+body {
+      background-position: 50% 50%;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.fullpage {
+  color: #FFF;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $l;
+}
+
+.section-title {
+  font-size: 72px;
+  & + * {
+    margin-top: 60px !important;
+  }
+  & + form {
+    margin-top: 100px !important;
+  }
 }
 
 
@@ -24,6 +57,10 @@ body {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    &.flex-row-center {
+        -webkit-justify-content: center;
+                justify-content: center;
     }
 }
 [class*='col-'] {
@@ -57,4 +94,15 @@ body {
 }
 :-moz-placeholder {
   opacity: 1;
+}
+
+.number-list {
+  counter-reset: list;
+}
+.number-increament {
+  counter-increment: list;
+}
+.number-position:before {
+  display: block;
+  content: counter(list);
 }
