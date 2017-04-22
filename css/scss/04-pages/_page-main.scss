@@ -35,6 +35,42 @@
         @media (max-width: 1500px) {
             font-size: 18px;
         }
+        @media (max-width: 900px) {
+             font-size: 16px;
+             max-width: 95%;
+        }
+    }
+    &.col-4 {
+        @media (max-width: 600px) {
+            width: 50%;
+            &.col-4:nth-child(n+3) {
+                margin-top: 40px;
+            }
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+            &.col-4:nth-child(n+2) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &.col-3 {
+        @media (max-width: 800px) {
+            width: 33%;
+            &:nth-child(n+4) {
+                margin-top: 40px;
+            }
+        }
+        @media (max-width: 600px) {
+            width: 50%;
+            &:nth-child(n+3) {
+                margin-top: 20px;
+            }
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 }
 
@@ -51,6 +87,9 @@
             content: "";
             right: -20px;
             top: 70px;
+            @media (max-width: 800px) {
+                display: none;
+            }
         }
         &:nth-of-type(4n) {
             &:after {
@@ -135,6 +174,9 @@
     @media (max-width: 1500px) {
         bottom: 20px;
     }
+    @media (max-width: 1200px) {
+        display: none;
+    }
     &:hover {
         opacity: .5;
     }
@@ -174,6 +216,7 @@
     -webkit-border-radius: 5px;
             border-radius: 5px;
     @include transition(all, .2s);
+    max-width: 100%;
     @media (max-width: 1700px) {
         width: 450px;
         height: 360px;
@@ -181,6 +224,19 @@
     @media (max-width: 1500px) {
         width: 400px;
         height: 320px;
+    }
+    @media (max-width: 1200px) {
+        width: 360px;
+        height: 290px;
+    }
+    @media (max-width: 900px) {
+        width: 320px;
+        height: 260px;
+    }
+    @media (max-width: 760px) {
+        width: 290px;
+        height: 230px;
+        margin: 10px;
     }
     &:hover {
         border-color: $red;
@@ -216,7 +272,19 @@
                 border-radius: 5px;
         font-weight: 700;
         z-index: 2;
+        max-width: 80%;
         @include transition(all, .2s);
+        @media (max-width: 1200px) {
+            height: 45px;
+            width: 320px;
+            font-size: 16px;
+        }
+        @media (max-width: 760px) {
+            font-size: 14px;
+        }
+        @media (max-width: 400px) {
+            font-size: 12px;
+        }
     }
     &:hover {
         border-color: $red;
@@ -242,6 +310,9 @@
        -moz-animation: bounce 4s infinite;
          -o-animation: bounce 4s infinite;
             animation: bounce 4s infinite;
+    @media (max-width: 1200px) {
+        display: none;
+    }
     &:hover {
         opacity: .5;
     }
@@ -259,6 +330,33 @@
 
 .info-numbers {
     margin: 65px 0;
+    @media (max-width: 1500px) {
+        margin: 45px 0;
+    }
+    .col-2 {
+        @media (max-width: 1000px) {
+            width: 25%;
+            margin: 10px 0;
+        }
+        @media (max-width: 800px) {
+            width: 33%;
+        }
+        @media (max-width: 600px) {
+            width: 50%;
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+    }
+    .col-3 {
+        @media (max-width: 760px) {
+            width: 50%;
+            margin: 10px 0;
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+    }
     &__item {
         i {
             display: block;
@@ -269,10 +367,52 @@
             font-size: 72px;
             font-style: normal;
             line-height: 1;
+            @media (max-width: 1500px) {
+                font-size: 62px;
+            }
+            @media (max-width: 1200px) {
+                font-size: 56px;
+                margin-bottom: 15px;
+            }
+            @media (max-width: 800px) {
+                font-size: 52px;
+                margin-bottom: 10px;
+            }
         }
         span {
             font-size: 21px;
             font-weight: 600;
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
+            @media (max-width: 800px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.cabinet {
+    .flex-row {
+        .col-3 {
+            @media (max-width: 1200px) {
+                width: 33%;
+            }
+            @media (max-width: 800px) {
+                width: 50%;
+            }
+            @media (max-width: 760px) {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+        }
+        .col-4 {
+            @media (max-width: 1200px) {
+                width: 50%;
+            }
+            @media (max-width: 760px) {
+                width: 100%;
+            }
         }
     }
 }

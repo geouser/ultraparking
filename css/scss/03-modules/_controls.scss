@@ -32,6 +32,18 @@
     &--small {
         font-size: 16px;
     }
+
+    @media (max-width: 760px) {
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+    }
+    @media (max-width: 500px) {
+        font-size: 14px;
+        height: auto;
+        line-height: 1.6;
+        padding: 8px 10px;
+    }
 }
 
 /* ------------------------------------ */
@@ -102,16 +114,52 @@
         .button {
             margin-top: 0;
         }
+        @media (max-width: 800px) {
+            width: 100%;
+            margin: 58px auto  0 !important;
+            .col-6 {
+                padding: 0;
+                width: 100%;
+                margin: 6px 0;
+            }
+        }
+        @media (max-width: 760px) {
+            margin-top: 20px;
+        }
     }
     .form-title {
         text-transform: uppercase;
-        letter-spacing: .5em;
+        letter-spacing: .25em;
         padding-left: 14px;
         font-weight: 700;
         margin-bottom: 15px;
+        @media (max-width: 1200px) {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 1200px) {
+            
+        }
     }
     .col-4 {
         padding: 0 35px;
+        @media (max-width: 1200px) {
+            padding: 0 10px;
+        }
+        @media (max-width: 760px) {
+            width: 100%;
+            margin: 6px auto;
+        }
+    }
+    .col-3 {
+        padding: 0 35px;
+        @media (max-width: 1200px) {
+            padding: 0 10px;
+            width: 50%;
+            margin: 6px auto;
+        }
+        @media (max-width: 760px) {
+            width: 100%;
+        }
     }
     .col-12 {
         &:nth-child(n+1) {
@@ -121,6 +169,9 @@
     .flex-row {
         &:nth-child(n+1) {
             margin-top: 35px;
+            @media (max-width: 1200px) {
+                margin-top: 20px;
+            }
         }
     }
     label {
@@ -132,6 +183,9 @@
         font-weight: 700;
         letter-spacing: .5em;
         margin-bottom: 6px;
+        @media (max-width: 760px) {
+            font-size: 12px;
+        }
     }
     .input-group {
         color: #000;
@@ -150,6 +204,11 @@
             font-weight: 400;
             display: block;
             height: 100%;
+            -webkit-border-radius: 5px;
+                    border-radius: 5px;
+            @media (max-width: 800px) {
+                font-size: 16px;
+            }
         }
         &--select {
             padding-left: 60px;
@@ -174,6 +233,9 @@
         span {
             font-size: 21px;
             font-weight: 600;
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
         }
         img {
             position: absolute;
@@ -234,6 +296,9 @@
         visibility: visible;
         border: none;
         background: transparent;
+        @media (max-width: 1200px) {
+                font-size: 18px;
+            }
     }
     &--dark {
         .input-group {
@@ -254,6 +319,9 @@
     color: $text;
     a {
         color: $text;
+    }
+    @media (max-width: 1200px) {
+        width: 300px;
     }
     .ui-datepicker-calendar {
         width: 100%;
