@@ -43,12 +43,12 @@ jQuery(document).ready(function($) {
 
 
     if (window.params.isMobile) {
-        $(document).click(function(event){
-            if ($(event.target).closest('header').is(".mainHeader")) {console.log('mainHeader')
-                $(".mainHeader").addClass('opened');
-            } else {
-                $(".mainHeader").removeClass('opened');
-            }
+        $(window).click(function() {
+            $(".mainHeader").removeClass('opened');
+        });
+        $(".mainHeader").click(function(event){
+            event.stopPropagation();
+            $(this).addClass('opened');
         });
     } else {
         $(".mainHeader").hover(function(){
@@ -100,7 +100,8 @@ jQuery(document).ready(function($) {
 
 
     $('.input-group--select').click(function(){
-        $(this).toggleClass('open');
+        $('.input-group--select').not(this).children('ul').removeClass('open');
+        $(this).addClass('open');
         $(this).find('ul').toggleClass('open');
     });
 

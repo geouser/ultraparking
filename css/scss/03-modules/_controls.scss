@@ -267,6 +267,7 @@
                 visibility: visible;
                 opacity: 1;
                 top: 105%;
+                z-index: 10;
             }
         }
     }
@@ -322,6 +323,7 @@
     }
     @media (max-width: 1200px) {
         width: 300px;
+        max-width: 80%;
     }
     .ui-datepicker-calendar {
         width: 100%;
